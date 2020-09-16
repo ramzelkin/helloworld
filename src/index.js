@@ -25,3 +25,23 @@ function insertOtherText(){
 }
 
 insertOtherText();
+
+function showMobileTemplate() {
+    var targetButton = document.getElementById('showMobile');
+    targetButton.addEventListener("click", function(){
+        let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+        width=375,height=500,left=500,top=150`;
+        let newWindow = open('', 'index', params);
+        newWindow.name = "myWindow";
+        newWindow.document.write(`<!doctype html>
+        <html>
+            <head>
+                <title>test</title>
+            <link href="./project-help/test/from/style-test-mobile.css" rel="stylesheet">
+            </head>
+            <body>
+            <p>Mobile</p></body></html>`);
+    });
+}
+
+showMobileTemplate();
