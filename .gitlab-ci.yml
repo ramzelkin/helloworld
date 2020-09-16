@@ -5,6 +5,8 @@ pages:
   before_script:
     - git submodule sync --recursive
     - git submodule update --init --recursive
+    - RD /S /Q "project-help\test\form"
+    - xcopy "project-help\from" "project-help\test\from\" /Y
   script:
     - mkdir .public
     - cp -r * .public
