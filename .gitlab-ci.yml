@@ -8,7 +8,7 @@ pages:
     
   script:
     - rm -f Content/m-style.css
-    - cp -f project-help/frpm/style-test-mobile.css Content
+    - cp -f project-help/from/style-test-mobile.css Content
     - mkdir .public
     - cp -r * .public
     - mv .public public
