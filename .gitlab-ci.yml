@@ -3,17 +3,16 @@
 image: node:latest
         
 stages:
-    - publish
     - pages
 
-publish:
-    stage: publish
-    image: node:12.0-slim
-    script:
-        - echo "//gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}">.npmrc
-        - npm publish
-    only:
-        - master
+# publish:
+#     stage: publish
+#     image: node:12.0-slim
+#     script:
+#         - echo "//gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}">.npmrc
+#         - npm publish
+#     only:
+#         - master
 pages:
   stage: pages
   before_script:

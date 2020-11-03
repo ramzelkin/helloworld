@@ -28,8 +28,5 @@
   "dependencies": {
     "jquery": "3.4.0",
     "lodash": "^4.17.15"
-    },
-    "publishConfig": {
-        "@helloworld:registry": "https//gitlab.com/api/v4/projects/21167331/packages/npm/"
     }
 }
