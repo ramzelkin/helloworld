@@ -9,9 +9,10 @@ pages:
   script:
     - rm -f Content/m-style.css
     - cp -f project-help/from/style-test-mobile.css Content
+    - webpack
     - mkdir .public
     - cp -r * .public
-    - mv .public public
+    - mv .public public        
   artifacts:
     paths:
       - public
