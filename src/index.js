@@ -2,6 +2,7 @@ import _ from 'lodash';
 import textEx from '../Text/text.html';
 import otherTextEx from '../Text/other-text.html';
 import img from './Components/img.html';
+import { mobileIndex } from './Components/mobileTemplate.js'
 
 
 function insertText(){
@@ -33,14 +34,7 @@ function showMobileTemplate() {
         width=375,height=500,left=500,top=150`;
         let newWindow = open('', 'index', params);
         newWindow.name = "myWindow";
-        newWindow.document.write(`<!doctype html>
-        <html>
-            <head>
-                <title>test</title>
-            <link href="./Content/style-test-mobile.css" rel="stylesheet">
-            </head>
-            <body>
-            <p>Mobile</p></body></html>`);
+        newWindow.document.write(mobileIndex);
     });
 }
 
