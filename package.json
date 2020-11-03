@@ -2,7 +2,7 @@
   "name": "helloworld",
   "version": "1.0.0",
   "description": "",
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "copy.bat && webpack",
     "pull-and-build": "git submodule update --remote --init && copy.bat && webpack"
