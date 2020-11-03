@@ -19,8 +19,8 @@ pages:
     - git submodule sync --recursive
     - git submodule update --init --recursive
   script:
-    - rm -f Content/m-style.css
-    - cp -f project-help/from/style-test-mobile.css Content
+    - rm -f --verbose Content/m-style.css
+    - cp -f --verbose project-help/from/style-test-mobile.css Content
     - npm install
     - npm run build
     - mkdir .public
