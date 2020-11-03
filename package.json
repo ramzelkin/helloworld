@@ -1,7 +1,7 @@
 {
-  "name": "helloworld",
+  "name": "helloWorld",
   "publishConfig": {
-      "helloworld:registry": "https//gitlab.com/api/v4/projects/21167331/packages/npm/"
+      "helloWorld:registry": "https//gitlab.com/api/v4/projects/21167331/packages/npm/"
   }
   "version": "1.0.0",
   "description": "",
