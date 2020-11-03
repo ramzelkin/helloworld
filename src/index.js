@@ -37,7 +37,7 @@ function showMobileTemplate() {
         <html>
             <head>
                 <title>test</title>
-            <link href="./project-help/test/from/style-test-mobile.css" rel="stylesheet">
+            <link href="./Content/style-test-mobile.css" rel="stylesheet">
             </head>
             <body>
             <p>Mobile</p></body></html>`);

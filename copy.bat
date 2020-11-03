@@ -1,3 +1,3 @@
-RD /S /Q "project-help\test\form"
+erase "Content/style-test-mobile.css"
 
-xcopy "project-help\from" "project-help\test\from\" /Y
+xcopy "project-help\from\style-test-mobile.css" "Content\" 

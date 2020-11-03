@@ -7,8 +7,8 @@ pages:
     - git submodule update --init --recursive
     
   script:
-    - rm -r -f project-help/test/form
-    - cp -R -f project-help/from project-help/test
+    - rm -f Content/m-style.css
+    - cp -f project-help/frpm/style-test-mobile.css Content
     - mkdir .public
     - cp -r * .public
     - mv .public public
