@@ -18,7 +18,9 @@ pages:
   before_script:
     - git submodule sync --recursive
     - git submodule update --init --recursive
-    - ls Content
+    - cd Content
+    - pwd
+    - cd ..
     - rm -rf Content/fonts
     - ls Content
     - rm -f Content/style-test-mobile.css
