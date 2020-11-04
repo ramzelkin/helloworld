@@ -18,12 +18,12 @@ pages:
   before_script:
     - git submodule sync --recursive
     - git submodule update --init --recursive
+  script:
     - rm -rf Content/fonts
     - rm -f Content/style-test-mobile.css
     - cp -R -f project-help/from/fonts Content
     - cp -f project-help/from/style-test-mobile.css Content
     - ls Content
-  script:
     - mkdir .public
     - cp -r * .public
     - ls -lah .public/
