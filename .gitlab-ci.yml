@@ -19,10 +19,11 @@ pages:
     - git submodule sync --recursive
     - git submodule update --init --recursive
   script:
-    - ls
+    - ls Content
     - rm -rf Content/fonts
+    - ls Content
     - rm -f Content/m-style.css
-
+    - ls Content
     - mkdir .public
     - cp -r * .public
     - mv .public public        
