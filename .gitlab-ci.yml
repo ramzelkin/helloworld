@@ -1,9 +1,9 @@
 # This file is a template, and might need editing before it works on your project.
 # Full project: https://gitlab.com/pages/plain-html
-image: node:latest
-        
-stages:
-    - pages
+# image: node:latest
+# 
+# stages:
+#     - deploy
 
 # publish:
 #     stage: publish
@@ -14,15 +14,15 @@ stages:
 #     only:
 #         - master
 pages:
-  stage: pages
+  stage: deploy
   before_script:
     - git submodule sync --recursive
     - git submodule update --init --recursive
   script:
-    - rm -f --verbose Content/m-style.css
-    - cp -f --verbose project-help/from/style-test-mobile.css Content
-    - rm -f -r --verbose Content/fonts
-    - cp -f -R --verbose project-help/from/fonts Content
+    - rm -r -f Content/fonts
+    - rm -f Content/m-style.css
+    - cp -R -f project-help/from/fonts Content
+    - cp -f project-help/from/style-test-mobile.css Content
     - mkdir .public
     - cp -r * .public
     - mv .public public        
