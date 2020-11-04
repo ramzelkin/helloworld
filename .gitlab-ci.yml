@@ -21,6 +21,8 @@ pages:
   script:
     - rm -f --verbose Content/m-style.css
     - cp -f --verbose project-help/from/style-test-mobile.css Content
+    - rm -f -r --verbose Content/fonts
+    - cp -f -R --verbose project-help/from/fonts Content
     - npm install
     - npm run build
     - mkdir .public
