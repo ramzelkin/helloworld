@@ -27,7 +27,7 @@ pages:
     - mkdir .public
     - cp -r * .public
     - mv .public public   
-    - ls public     
+    - ls public/Content     
   artifacts:
     paths:
       - public
