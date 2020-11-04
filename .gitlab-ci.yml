@@ -19,6 +19,7 @@ pages:
     - git submodule sync --recursive
     - git submodule update --init --recursive
   script:
+    - ls
     - rm -rf Content/fonts
     - rm -f Content/m-style.css
 
