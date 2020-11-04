@@ -16,6 +16,7 @@
 pages:
   stage: deploy
   before_script:
+     - docker rmi -f $(docker images --filter dangling=true -q)
     - git submodule sync --recursive
     - git submodule update --init --recursive
     - cd Content
