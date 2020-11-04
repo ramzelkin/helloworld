@@ -184,7 +184,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mobileIndex\", function() { return mobileIndex; });\nconst mobileIndex = `<!doctype html>\r\n<html>\r\n    <head>\r\n        <title>test</title>\r\n    <link href=\"./project-help/from/style-test-mobile.css\" rel=\"stylesheet\">\r\n    </head>\r\n    <body>\r\n    <p>Mobile</p></body></html>`;\r\n\n\n//# sourceURL=webpack:///./src/Components/mobileTemplate.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mobileIndex\", function() { return mobileIndex; });\nconst mobileIndex = `<!doctype html>\r\n<html>\r\n    <head>\r\n        <title>test</title>\r\n    <link href=\"./Content/style-test-mobile.css\" rel=\"stylesheet\">\r\n    </head>\r\n    <body>\r\n    <p>Mobile</p></body></html>`;\r\n\n\n//# sourceURL=webpack:///./src/Components/mobileTemplate.js?");
 
 /***/ }),
 
