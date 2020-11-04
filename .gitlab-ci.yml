@@ -21,7 +21,7 @@ pages:
     - ls Content
     - rm -rf Content/fonts
     - ls Content
-    - rm -f Content/m-style.css
+    - rm -f Content/style-test-mobile.css
     - ls Content
   script:
     - mkdir .public
