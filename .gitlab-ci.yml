@@ -18,12 +18,12 @@ pages:
   before_script:
     - git submodule sync --recursive
     - git submodule update --init --recursive
-  script:
     - ls Content
     - rm -rf Content/fonts
     - ls Content
     - rm -f Content/m-style.css
     - ls Content
+  script:
     - mkdir .public
     - cp -r * .public
     - mv .public public        
