@@ -26,8 +26,10 @@ pages:
   script:
     - mkdir .public
     - cp -r * .public
+    - ls -lah .public/
+    - ls -lah .public/Content 
     - mv .public public   
-    - ls public/Content     
+    - ls -lah public/Content     
   artifacts:
     paths:
       - public
