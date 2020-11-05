@@ -257,3 +257,6 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 Content/style-test-mobile.css
+Content/fonts
+
+dist/main.js
