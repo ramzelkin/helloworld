@@ -26,7 +26,6 @@ install_dependencies:
     stage: build
     script:
         - npm install
-        - npm run pages-build
     artifacts:
         paths:
             - node_modules/ 
@@ -41,13 +40,10 @@ pages:
     - rm -f Content/css/style-test-mobile.css
     - cp -R -f project-help/from/fonts Content
     - cp -f project-help/from/style-test-mobile.css Content/css
-    - ls Content
+    - npm run pages-build
     - mkdir .public
     - cp -r * .public
-    - ls -lah .public/
-    - ls -lah .public/Content 
     - mv .public public   
-    - ls -lah public/Content     
   artifacts:
     paths:
       - public
