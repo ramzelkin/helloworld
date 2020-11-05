@@ -4,6 +4,7 @@
   "description": "",
   "private": false,
   "scripts": {
+    "pages-build": "webpack",
     "build": "copy.bat && webpack",
     "pull-and-build": "git submodule update --remote --init && copy.bat && webpack"
   },
