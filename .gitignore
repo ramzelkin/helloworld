@@ -258,5 +258,6 @@ fabric.properties
 
 Content/css/style-test-mobile.css
 Content/fonts
+Content/style-test-mobile.css
 
 dist/main.js
