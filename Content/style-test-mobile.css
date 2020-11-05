@@ -1,0 +1,12 @@
+@font-face {
+ font-family: Itim; 
+ src: url("./fonts/Itim-Regular.ttf");
+}
+
+P {
+ font-family: Itim;
+}
+
+p {
+    color: red;
+}
