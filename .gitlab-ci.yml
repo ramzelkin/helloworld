@@ -18,6 +18,8 @@ pages:
   before_script:
     - git submodule sync --recursive
     - git submodule update --init --recursive
+    - npm install
+    - npm run build
   script:
     - rm -rf Content/fonts
     - rm -f Content/style-test-mobile.css
