@@ -37,6 +37,7 @@ pages:
     - git submodule update --init --recursive
   script:
     - rm -rf Content/fonts
+    - rm -f Content/style-test-mobile.css
     - rm -f Content/css/style-test-mobile.css
     - cp -R -f project-help/from/fonts Content
     - cp -f project-help/from/style-test-mobile.css Content/css
