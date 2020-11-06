@@ -15,26 +15,12 @@
 #         - master
 image: node:latest
 
-stages:
-    - build
-    - deploy
-    
-cache:
-    paths:
-        - node_modules/
-install_dependencies:
-    stage: build
-    script:
-        - npm install
-    artifacts:
-        paths:
-            - node_modules/ 
-
 pages:
   stage: deploy
   before_script:
     - git submodule sync --recursive
     - git submodule update --init --recursive
+    - npm install
   script:
     - rm -rf Content/fonts
     - rm -f Content/css/style-test-mobile.css

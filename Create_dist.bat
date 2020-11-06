@@ -1,3 +1,3 @@
 RD /S /Q "dist"
 
-mkdir dist
+mkdir "dist"
