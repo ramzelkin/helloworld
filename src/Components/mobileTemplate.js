@@ -5,4 +5,4 @@ export const mobileIndex = `<!doctype html>
     <link href="./Content/style-test-mobile.css" rel="stylesheet">
     </head>
     <body>
-    <p>Mobile</p></body></html>`;
+    <p>Mobile</p></body></html>`; 
