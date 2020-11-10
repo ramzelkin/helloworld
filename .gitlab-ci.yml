@@ -4,7 +4,10 @@ image: node:latest
 pages:
   stage: deploy
   before_script:
-    - git submodule add https://gitlab.com/ramzelkin/project-help.git
+    # - git submodule add https://gitlab.com/ramzelkin/project-help.git
+    - git submodule sync --recursive
+    - git submodule update --init --recursive
+    - git diff --cached --submodule
     - npm install
   script:
     - rm -rf Content/fonts
