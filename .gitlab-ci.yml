@@ -1,13 +1,12 @@
 
 image: node:latest
 
-
+ variables:
+   GIT_SUBMODULE_STRATEGY: recursive
 
 pages:
   stage: deploy
   before_script:
-      variables:
-        GIT_SUBMODULE_STRATEGY: recursive
     - npm install
   script:
     - rm -rf Content/fonts
