@@ -4,7 +4,7 @@ image: node:latest
 pages:
   stage: deploy
   before_script:
-    - git submodule add https://gitlab.com/ramzelkin/project-help
+    - git submodule add git@gitlab.com:ramzelkin/project-help.git
     - cat .gitmodules
         [submodule "project-help"]
         path = project-help
