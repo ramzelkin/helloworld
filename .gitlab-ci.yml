@@ -1,12 +1,11 @@
 
 image: node:latest
 
-variables:
-    GIT_SUBMODULE_STRATEGY: recursive
-
 pages:
   stage: deploy
   before_script:
+    - git submodule sync --recursive
+    - git submodule update --init --recursive
     - npm install
   script:
     - rm -rf Content/fonts
