@@ -11,7 +11,7 @@ pages:
     # - git submodule
     # - ls
     - git submodule update --remote --init
-    - git status
+    - git submodule
     - npm install
   script:
     - rm -rf Content/fonts
