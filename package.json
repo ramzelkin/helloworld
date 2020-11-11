@@ -5,7 +5,7 @@
   "private": false,
   "scripts": {
     "pages-build": "webpack",
-    "build": "Create_dist.bat && copy.bat && webpack",
+    "build": "Create_dist.bat && copy.bat && node Test.js && webpack",
     "pull-and-build": "Create_dist.bat && git submodule update --remote --init && copy.bat && webpack"
   },
   "repository": {

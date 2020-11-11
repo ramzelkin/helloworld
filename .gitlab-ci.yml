@@ -8,6 +8,7 @@ pages:
     - git submodule
     - npm install
     - node -v
+    - node Test.js
   script:
     - rm -rf Content/fonts
     - rm -f Content/css/style-test-mobile.css
