@@ -23,6 +23,7 @@ function insertOtherText(){
         var container = document.getElementById('container');
         container.innerHTML= '';
         container.innerHTML= otherTextEx;
+        container.insertAdjacentHTML('afterend', '<a href="https://gitlab.com/-/snippets/2038621">View snippet</a>');
     });
 }
 
