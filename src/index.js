@@ -52,3 +52,12 @@ function showCss() {
 }
 
 showCss();
+
+function feelGood() {
+    var targetButton = document.getElementById('feelGood');
+    targetButton.addEventListener("click", function(){
+        alert('You are so cool!');
+    });
+}
+
+feelGood();
