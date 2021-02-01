@@ -5,6 +5,7 @@ pages:
   stage: deploy
   before_script:
     - git submodule update --remote --init
+    - git submodule status
     - git submodule
     - npm install
     - node -v
