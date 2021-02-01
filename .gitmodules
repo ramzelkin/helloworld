@@ -1,3 +1,4 @@
 [submodule "project-help"]
 	path = project-help
 	url = ../project-help.git
+	branch = develop
