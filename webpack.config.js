@@ -1,12 +1,17 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-    module.exports = {
+module.exports = {
     mode: 'development',
     entry: './src/index.js',
     output: {
-        filename: 'main.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
+    },
+    stats: {
+        children: true,
     },
     module: {
         rules: [
@@ -16,22 +21,19 @@ const webpack = require('webpack');
             },
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[path][name].[ext]',
-                        },
-                    },
-                ],
+                test: /\.(png|jpe?g|gif|woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/i,
+                type: 'asset/resource'
             }
         ],
     },
     plugins: [
+        new MiniCssExtractPlugin(),
+        new HtmlWebpackPlugin({
+            template: './index.html'
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'

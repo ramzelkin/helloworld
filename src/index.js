@@ -5,6 +5,7 @@ import img from './Components/img.html';
 import { mobileIndex } from './Components/mobileTemplate.js'
 import { newTextCss } from '../Text/CssText.js';
 
+import styles from '../project-help/style.css';
 
 function insertText(){
     var targetButton = document.getElementById('insert-text');
