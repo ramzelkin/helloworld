@@ -6,6 +6,10 @@ image: node:14.16.0
 pages:
   stage: deploy
   before_script:
+    - cd project-help
+    - git checkout develop
+    - git pull
+    - cd ..  
     - git submodule status
     - git submodule sync --recursive
     - git submodule update --init --recursive
