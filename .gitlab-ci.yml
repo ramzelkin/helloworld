@@ -3,10 +3,10 @@ image: node:14.16.0
 pages:
   stage: deploy
   before_script:
-    - git submodule init
-    - git submodule update
-    - git submodule sync --recursive
-    - git submodule update --init --recursive
+    - cd project-help
+    - git pull
+    - git status 
+    - cd ..
     - git submodule status
     - npm install
     - node -v
