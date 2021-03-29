@@ -4,8 +4,9 @@ pages:
   stage: deploy
   before_script:
     - cd project-help
+    - git checkout develop
     - git pull
-    - git status 
+    - git status
     - cd ..
     - git submodule status
     - npm install
