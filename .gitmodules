@@ -1,4 +1,4 @@
 [submodule "project-help"]
 	path = project-help
-	url = https://gitlab.com/ramzelkin/project-help.git
+	url = ../project-help.git
 	branch = develop
