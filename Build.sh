@@ -7,4 +7,4 @@ mkdir public
 cp -r * public
 # mkdir .public
 # cp -r * .public
-# mv .public public
+mv public public
