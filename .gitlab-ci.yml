@@ -11,7 +11,7 @@ pages:
     - node -v
     - node Test.js
   script:
-    - Build.sh
+    - ./Build.sh
   artifacts:
     paths:
       - public
