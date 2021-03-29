@@ -11,6 +11,7 @@ pages:
     - node -v
     - node Test.js
   script:
+    - chmod +x ./Build.sh 
     - ./Build.sh
   artifacts:
     paths:
