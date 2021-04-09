@@ -26,7 +26,7 @@ module.exports = {
             {
                 test: /\.(png|jpe?g|gif|woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/i,
                 type: 'asset/resource'
-            }
+            },
         ],
     },
     plugins: [
