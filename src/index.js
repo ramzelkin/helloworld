@@ -1,4 +1,4 @@
-import '../project-help/style.css';
+import '../Content/css/style.css';
 import textEx from '../Text/text.html';
 import otherTextEx from '../Text/other-text.html';
 import img from './Components/img.html';

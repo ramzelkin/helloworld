@@ -261,3 +261,6 @@ Content/fonts
 Content/style-test-mobile.css
 
 dist/
+
+Content/css/style.css
+Content/css/from/
