@@ -5,6 +5,7 @@ pages:
   stage: deploy
   before_script:
     - git submodule sync --recursive && git submodule update --remote --init
+    - git submodule status
     - npm install
     - node Test.js
   script:
