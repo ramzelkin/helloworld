@@ -7,8 +7,9 @@ module.exports = {
     mode: 'development',
     entry: './src/index.js',
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
+        clean: true,
     },
     stats: {
         children: true,
@@ -32,7 +33,7 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
-            template: './index.html'
+            template: './test.html'
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
