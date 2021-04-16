@@ -13,6 +13,9 @@ pages:
   script:
     - chmod +x ./Build.sh
     - ./Build.sh
+    - mkdir .public
+    - cp -r dist .public
+    - mv .public public
   artifacts:
     paths:
       - public
