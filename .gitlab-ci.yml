@@ -1,14 +1,11 @@
-variables:
-  GIT_SUBMODULE_STRATEGY: recursive
 
 image: node:14.16.0
 
 pages:
   stage: deploy
   before_script:
-    - git submodule status
+    - git submodule sync --recursive && git submodule update --remote --init
     - npm install
-    - node -v
     - node Test.js
   script:
     - chmod +x ./Build.sh
