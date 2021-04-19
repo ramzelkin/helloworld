@@ -13,7 +13,7 @@ pages:
     - ./Build.sh
     - mkdir .public
     - cp -a dist/. .public
-    - cp Content/testAdditioal.js .public
+    - cp src/testAdditioal.js .public/Content
     - mv .public public
   artifacts:
     paths:
