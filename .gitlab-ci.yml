@@ -13,6 +13,7 @@ pages:
     - ./Build.sh
     - mkdir .public
     - cp -a dist/. .public
+    - rm -rf Content
     - mkdir Content
     - mkdir Content/css
     - cp -f src/testAdditional.js Content
