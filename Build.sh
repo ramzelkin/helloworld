@@ -6,4 +6,6 @@ rm -f Content/css/style.css
 cp -f project-help/style.css Content/css
 rm -rf Content/css/from
 cp -R -f project-help/from Content/css
+rm -f Content/testAdditioal.js
+cp -f src/testAdditional.js Content
 npm run pages-build
