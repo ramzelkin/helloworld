@@ -13,10 +13,10 @@ pages:
     - ./Build.sh
     - mkdir .public
     - cp -a dist/. .public
-    - mkdir .public/Content
-    - mkdir .public/Content/css
-    - cp -f src/testAdditional.js .public/Content
-    - cp -f Content/css/style-test-mobile.css .public/Content/css
+    - mkdir Content
+    - mkdir Content/css
+    - cp -f src/testAdditional.js Content
+    - cp -f Content/css/style-test-mobile.css Content/css
     - mv .public public
   artifacts:
     paths:
