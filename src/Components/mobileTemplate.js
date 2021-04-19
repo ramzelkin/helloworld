@@ -2,8 +2,8 @@ export const mobileIndex = `<!doctype html>
 <html>
     <head>
         <title>test</title>
-    <link href="../Content/style-test-mobile.css" rel="stylesheet">
-    <script> scr="../Content/testAdditional.js"</script>
+    <link href="./Content/style-test-mobile.css" rel="stylesheet">
+    <script> scr="./Content/testAdditional.js"</script>
     </head>
     <body>
     <nav id="mobile_menu" class=" navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
