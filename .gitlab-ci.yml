@@ -14,7 +14,7 @@ pages:
     - mkdir .public
     - cp -a dist/. .public
     - mkdir .public/Content
-    - cp -f src/testAdditioal.js .public/Content
+    - cp -f src/testAdditional.js .public/Content
     - mv .public public
   artifacts:
     paths:
