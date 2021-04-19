@@ -7,4 +7,4 @@ xcopy "project-help\from\style-test-mobile.css" "Content\css" /Y
 xcopy "project-help\style.css" "Content\css" /Y
 xcopy "project-help\from" "Content\css\from\" /Y/E
 del /S /Q "Content\testAdditional.js"
-xcopy "src/testAdditional.js" "Content\" /Y
+xcopy "src\testAdditional.js" "Content\" /Y
