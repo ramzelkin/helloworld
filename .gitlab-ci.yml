@@ -17,7 +17,7 @@ pages:
     - mkdir Content
     - mkdir Content/css
     - cp -f src/testAdditional.js Content
-    - cp -f Content/css/style-test-mobile.css Content/css
+    - cp -f project-help/from/style-test-mobile.css Content/css
     - mv .public public
   artifacts:
     paths:
