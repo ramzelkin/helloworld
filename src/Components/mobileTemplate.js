@@ -3,7 +3,7 @@ export const mobileIndex = `<!doctype html>
     <head>
         <title>test</title>
     <link href="./Content/css/style-test-mobile.css" rel="stylesheet">
-
+    <script src="./Content/jquery.min.js"></script>
     </head>
     <body>
     <nav id="mobile_menu" class=" navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
