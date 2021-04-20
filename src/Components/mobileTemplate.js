@@ -3,7 +3,7 @@ export const mobileIndex = `<!doctype html>
     <head>
         <title>test</title>
     <link href="./Content/style-test-mobile.css" rel="stylesheet">
-    <script scr="./Content/testAdditional.js"></script>
+
     </head>
     <body>
     <nav id="mobile_menu" class=" navbar navbar-expand-lg navbar-dark fixed-top bg-secondary">
@@ -45,4 +45,6 @@ export const mobileIndex = `<!doctype html>
         <button id="forMobile">just try it</button>
     </div>
 </nav>
-    <p>Mobile</p></body></html>`;
+    <p>Mobile</p>
+    <script scr="./Content/testAdditional.js"></script>
+    </body></html>`;
