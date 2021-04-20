@@ -51,7 +51,7 @@ export const mobileIndex = `<!doctype html>
     function showGood(){
         var targetButton = document.getElementById('forMobile');
         targetButton.addEventListener("click", function(){
-            $('body').css('background', 'lightblue');
+            $('body').css('background', 'coral');
         });
     }
 
