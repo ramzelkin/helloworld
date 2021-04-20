@@ -2,7 +2,7 @@ export const mobileIndex = `<!doctype html>
 <html>
     <head>
         <title>test</title>
-    <link href="./Content/style-test-mobile.css" rel="stylesheet">
+    <link href="./Content/css/style-test-mobile.css" rel="stylesheet">
 
     </head>
     <body>
