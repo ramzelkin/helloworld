@@ -46,15 +46,5 @@ export const mobileIndex = `<!doctype html>
     </div>
 </nav>
     <p>Mobile</p>
-    <script>
-
-    function showGood(){
-        var targetButton = document.getElementById('forMobile');
-        targetButton.addEventListener("click", function(){
-            $('body').css('background', 'coral');
-        });
-    }
-
-    showGood();
-    </script>
+    <script type="text/javascript" src="./Content/testAdditional.js"></script>
     </body></html>`;
