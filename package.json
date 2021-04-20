@@ -5,8 +5,8 @@
   "private": false,
   "scripts": {
     "pages-build": "webpack",
-    "build": "copy.bat && node Test.js && webpack -version && webpack",
-    "pull-and-build": "git submodule update --remote --init && copy.bat && webpack"
+    "build": "copy.bat && node Test.js && webpack -version && webpack && afterBuild.bat",
+    "pull-and-build": "git submodule update --remote --init && copy.bat && webpack && afterBuild.bat"
   },
   "repository": {
     "type": "git",
