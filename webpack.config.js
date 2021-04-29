@@ -4,7 +4,10 @@ const webpack = require('webpack');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: {
+        main: './src/index.js',
+        mobile: './src/mobileIndex.js'
+    },
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
@@ -31,7 +34,14 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './test.html'
+            template: './test.html',
+            filename: 'index.html',
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'mobile-index.html',
+            template: './mobile-index-template.html',
+            chunks: ['mobile']
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
