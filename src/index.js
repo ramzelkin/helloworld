@@ -2,7 +2,6 @@ import '../Content/css/style.css';
 import textEx from '../Text/text.html';
 import otherTextEx from '../Text/other-text.html';
 import img from './Components/img.html';
-import { mobileIndex } from './Components/mobileTemplate.js'
 import { newTextCss } from '../Text/CssText.js';
 
 function insertText(){
@@ -33,9 +32,8 @@ function showMobileTemplate() {
     targetButton.addEventListener("click", function(){
         let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
         width=375,height=500,left=500,top=150`;
-        let newWindow = open('', 'index', params);
+        let newWindow = open('mobile-index.html', 'index', params);
         newWindow.name = "myWindow";
-        newWindow.document.write(mobileIndex);
     });
 }
 
