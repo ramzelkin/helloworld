@@ -11,6 +11,9 @@ pages:
   script:
     - chmod +x ./Build.sh
     - ./Build.sh
+    - cd project-help
+    - node buildAssets.js
+    - cd ..
     - chmod +x ./afterBuild.sh
     - ./afterBuild.sh
   artifacts:
