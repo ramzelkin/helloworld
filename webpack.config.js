@@ -16,6 +16,7 @@ module.exports = {
     stats: {
         children: true,
     },
+    cache: false,
     module: {
         rules: [
             {
