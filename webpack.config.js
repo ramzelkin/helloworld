@@ -11,11 +11,9 @@ module.exports = {
     output: {
         chunkFilename: "[name].[contenthash].js",
         filename: '[name].[contenthash].js',
+        assetModuleFilename: "[name].[contenthash][ext][query]",
         path: path.resolve(__dirname, 'dist'),
         clean: true,
-    },
-    devServer: {
-        watchContentBase: true
     },
     module: {
         rules: [
