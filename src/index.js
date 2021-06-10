@@ -58,8 +58,3 @@ function feelGood() {
 }
 
 feelGood();
-
-document.addEventListener('DOMContentLoaded', function(){
-    console.log('000');
-    location.reload();
-})
