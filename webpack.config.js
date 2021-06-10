@@ -13,9 +13,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
-    stats: {
-        children: true,
-    },
     devServer: {
         watchContentBase: true
     },
