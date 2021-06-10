@@ -16,7 +16,9 @@ module.exports = {
     stats: {
         children: true,
     },
-    cache: false,
+    devServer: {
+        watchContentBase: true
+    },
     module: {
         rules: [
             {
