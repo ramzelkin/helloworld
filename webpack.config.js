@@ -9,6 +9,7 @@ module.exports = {
         mobile: './src/mobileIndex.js'
     },
     output: {
+        chunkFilename: "[name].[contenthash].js",
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
