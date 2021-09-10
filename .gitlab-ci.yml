@@ -16,6 +16,8 @@ pages:
     - cd ..
     - chmod +x ./afterBuild.sh
     - ./afterBuild.sh
+  job:
+    - cache: []  
   artifacts:
     paths:
       - public
