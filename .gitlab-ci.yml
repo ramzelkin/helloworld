@@ -1,10 +1,13 @@
 
 image: node:14.16.0
 
+variables:
+  sha: CI_COMMIT_SHA
+
 pages:
   stage: deploy
   cache:
-    - key: 
+    key: sha
   before_script:
     - git submodule sync --recursive && git submodule update --remote --init
     - git submodule status
