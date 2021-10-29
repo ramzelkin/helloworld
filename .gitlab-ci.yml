@@ -2,14 +2,19 @@
 image: node:14.16.0
 CACHE_PATH: "C:/gitlab-runner/cache/group/project/repo/"
 
-cleanup_job:
+  stages:
+  - cleanup
+  - pages
+
+cleanup:
   stage: cleanup
   script:
     - echo "Cleaning up"
     - rm -rf "%CACHE_PATH%/%CI_PIPELINE_ID%"
   when: always
+  
 pages:
-  stage: deploy
+  stage: pages
   before_script:
     - git submodule sync --recursive && git submodule update --remote --init
     - npm install
