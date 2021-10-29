@@ -3,8 +3,9 @@ const fs = require('fs');
 const path = require('path');
 
 
-let main = fs.readdir(distFolder, (err, files) => {
+var main = fs.readdir(distFolder, (err, files) => {
     files.filter(file => {
+        console.log(file.includes('main'));
         return file.includes('main');
     })
 });
