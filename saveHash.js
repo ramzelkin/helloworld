@@ -9,5 +9,5 @@ let main = fs.readdir(distFolder, (err, files) => {
     })
 });
 
-let scriptName = path.basename(main);
-console.log(scriptName);
+console.log(main);
+console.log(typeof(main));
