@@ -18,8 +18,7 @@ pages:
     - cd project-help
     - node buildAssets.js
     - cd ..
-    - chmod +x ./saveHash.sh
-    - ./saveHash.sh
+    - node saveHash.js
     - chmod +x ./afterBuild.sh
     - ./afterBuild.sh
   artifacts:
