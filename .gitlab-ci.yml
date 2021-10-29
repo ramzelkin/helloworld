@@ -1,8 +1,7 @@
 
 image: node:14.16.0
-CACHE_PATH: "C:/gitlab-runner/cache/group/project/repo/"
 
-  stages:
+stages:
   - cleanup
   - pages
 
@@ -10,9 +9,9 @@ cleanup:
   stage: cleanup
   script:
     - echo "Cleaning up"
-    - rm -rf "%CACHE_PATH%/%CI_PIPELINE_ID%"
+    - rm -rf "C:/gitlab-runner/cache/group/project/repo/%CI_PIPELINE_ID%"
   when: always
-  
+
 pages:
   stage: pages
   before_script:
