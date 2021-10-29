@@ -2,9 +2,10 @@ const distFolder = './dist/';
 const fs = require('fs');
 const path = require('path');
 
+var main;
 
-var main = fs.readdir(distFolder, (err, files) => {
-    files.filter(file => {
+fs.readdir(distFolder, (err, files) => {
+    main = files.filter(file => {
         console.log(file.includes('main'));
         return file.includes('main');
     })
