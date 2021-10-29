@@ -58,16 +58,3 @@ function feelGood() {
 }
 
 feelGood();
-
-$(function(){
-    var client = new XMLHttpRequest();
-    client.open("GET", "unicorns-are-teh-awesome.txt", true);
-    client.send();
-    client.onreadystatechange = function() {
-    if(this.readyState == this.HEADERS_RECEIVED) {
-        console.log(client.getResponseHeader("Content-Type"));
-    }   
-}
-});
-
-

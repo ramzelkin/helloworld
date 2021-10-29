@@ -10,16 +10,16 @@ pages:
     key: jobId
   before_script:
     - git submodule sync --recursive && git submodule update --remote --init
-    - git submodule status
     - npm install
     - node Test.js
   script:
-    - export
     - chmod +x ./Build.sh
     - ./Build.sh
     - cd project-help
     - node buildAssets.js
     - cd ..
+    - chmod +x ./saveHash.sh
+    - ./saveHash.sh
     - chmod +x ./afterBuild.sh
     - ./afterBuild.sh
   artifacts:
