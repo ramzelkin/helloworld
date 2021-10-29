@@ -1,9 +1,13 @@
 const distFolder = './dist/';
 const fs = require('fs');
+const path = require('path');
 
-fs.readdir(distFolder, (err, files) => {
+
+let main = fs.readdir(distFolder, (err, files) => {
     files.filter(file => {
-        console.log(file.includes('main'));
         return file.includes('main');
     })
 });
+
+let scriptName = path.basename(main);
+console.log(scriptName);
