@@ -7,6 +7,7 @@ stages:
 
 pages:
   stage: pages
+  cache: {}
   before_script:
     - git submodule sync --recursive && git submodule update --remote --init
     - npm install
@@ -27,6 +28,7 @@ pages:
 
 cleanup:
   stage: cleanup
+  cache: {}
   script:
     - echo "Cleaning up"
     - rm -rf "C:/gitlab-runner/cache/group/project/repo/%CI_PIPELINE_ID%"
